@@ -22,7 +22,7 @@ jobs:
         run: pytest test.py
         
       - name: install requirements
-        run: pip install -r requirements.txt
+        run: pip install -r requirements.txt, pip install flake8 pytest
           
       - name: test coverage
         run: |
