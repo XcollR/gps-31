@@ -19,7 +19,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: make testing
-        run: python3 test.py
+        run: pytest test.py
+        
+      - name: install requirements
+        run: pip install -r requirements.txt
           
       - name: test coverage
         run: |
